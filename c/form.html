@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+     
+      
+
+      h1{
+
+           text-align: center;
+          
+      }
+
+      .fm{
+
+              width: 98%;
+              height: 500px;
+              border: 0px solid blue;
+              margin-top: 50px;
+              margin-left: 17px; 
+              border-radius: 80px;      
+      }
+
+      
+
+      form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+ 
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 5px;
+}
+
+button[type="submit"] {
+  background-color: orange;
+  color: black;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer{
+
+width: 100%;
+height: 250px;
+border: 2px solid black;
+margin-left: 0px;
+background-color: black;
+
+}
+.footer{
+
+ width: 200px;
+ height: 160px;
+ border: 0px solid blue;
+ float: left;
+ margin-left: 70px;
+ 
+}
+
+.footer ul li{
+
+list-style: none;
+text-align: center;
+margin-top: 10px;
+font-size: 20px;
+
+}
+.footer ul h1{
+
+text-align: center;
+margin-top: 10px;
+color: white;
+
+}
+.footer ul li a{
+
+ text-decoration: none;
+ text-transform: capitalize;
+ color: white;
+}
+.foot{
+ width: 100%;
+ height: 90px;
+ border: 0px solid palevioletred;
+ margin-top: 160px;
+ text-align: center;
+ padding-top: 30px;
+ font-size: 22px;
+ letter-spacing: 2px;
+ color: white;
+ 
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <h1><span1>&#128523;</span1><span>Happy</span><span2>foods</span2></h1>
+                
+            </div>
+        </div>
+
+        <div class="navigate">
+            <div class="navigation">
+               <ul>
+                
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="menu.html">menu</a></li>
+               </ul>
+               
+               <input type="text" id="searchbar" placeholder="search...">
+               <ul id="suggestions">
+                   
+                <li><a href="#">ladoo</a></li>
+                <li><a href="#">samosa</a></li>
+                <li><a href="#">Gulab jamun</a></li>
+                <li><a href="#">rasmalai</a></li>
+                <li><a href="#">Mango kulfi</a></li>
+                <li><a href="#">motichoor ladoo</a></li>
+                <li><a href="#">coffee</a></li>
+               </ul>
+               </div>
+               <hr/>
+               <div class="fm">
+                <h1>Order By</h1>
+                <form id="orderForm">
+                  <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                  </div>
+                  <div>
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                  </div>
+                  <div>
+                    <label for="food">Select Food:</label>
+                    <select id="food" name="food" required>
+                      <option value="">Select...</option>
+                      <option value="samosa">Samosa</option>
+                      <option value="Pizza">Pizza</option>
+                      <option value="Dosa">Dosa</option>
+                      <option value="Ladoo">Ladoo</option>
+                      <option value="Gulam jamun">Gulab Jamun</option>
+                      <option value="Rasmalai">Rasmalai</option>
+                      <option value="mango kulfi">Mango kulfi</option>
+                      <!-- Add more food options here -->
+                    </select>
+                    
+                  </div>
+                  <button type="submit">Place Order</button>
+                </form>
+               </div>
+            </div>
+
+            <footer>
+
+              <div class="footer">
+               <ul>
+                 
+                 <h1>Discover</h1>
+                 <li><a href="#">online retail</a></li>
+                 <li><a href="">get strted</a></li>
+                 <li><a href="">service</a></li>
+                 
+               </ul>
+              </div>
+              <div class="footer">
+               <ul>
+                 
+                 <h1>about</h1>
+                 <li><a href="#">contact</a></li>
+                 <li><a href="">gallery</a></li>
+                 <li><a href="">services</a></li>
+                 
+               </ul>
+              </div>
+              <div class="footer">
+               <ul>
+                 
+                 <h1>buy</h1>
+                 <li><a href="#">where to buy</a></li>
+                 <li><a href="#">shop online</a></li>
+                 
+                 
+               </ul>
+              </div>
+           
+              <div class="footer">
+               <ul>
+                 
+                 <h1>help</h1>
+                 <li><a href="#">faq</a></li>
+                 <li><a href="">support</a></li>
+                 <li><a href="">knowledge base</a></li>
+                 
+               </ul>
+              </div>
+             
+              <div class="foot">
+                 @2023 creating this website
+              </div>
+     </footer>
+
+            <script>
+
+                var searchbar = document.getElementById('searchbar');
+                var suggestions = document.getElementById('suggestions');
+                
+                searchbar.addEventListener('input', function() {
+                  var query = searchbar.value.toLowerCase();
+                
+                  var items = suggestions.getElementsByTagName('li');
+                
+                  for (var i = 0; i < items.length; i++) {
+                    var item = items[i];
+                    if (item.innerHTML.toLowerCase().indexOf(query) !== -1) {
+                      item.style.display = 'block';
+                    } else {
+                      item.style.display = 'none';
+                    }
+                  }
+                
+                  if (query === '') {
+                    suggestions.style.display = 'none';
+                  } else {
+                    suggestions.style.display = 'block';
+                  }
+                });
+
+                document.getElementById("orderForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the form from submitting by default
+
+  // Fetch form values
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const address = document.getElementById("address").value;
+  const food = document.getElementById("food").value;
+
+  // Perform validation
+  if (!name || !email || !phone || !address || !food) {
+    alert("Please fill in all required fields.");
+    return;
+  }
+
+  // Do something with the form data (e.g., send it to a server)
+  // You can use AJAX or fetch API to send the data to a server-side script
+
+  // Example: Logging the form data to the console
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Phone:", phone);
+  console.log("Address:", address);
+  console.log("Selected Food:", food);
+
+  // Reset the form
+  document.getElementById("orderForm").reset();
+});
+                    </script>
+    
+</body>
+</html>
